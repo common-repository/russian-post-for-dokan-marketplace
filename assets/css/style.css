@@ -1,0 +1,82 @@
+.russian_post__checkout_popup_link {
+    display: none;
+}
+input:checked + label + br + .russian_post__checkout_popup_link {
+    display: block;
+}
+
+#checkout_popup_cart{
+    background: white;
+    padding: 30px;
+    box-sizing: border-box;
+    display: none;
+    width: 900px;
+    max-width: 90vw;
+}
+.woocommerce-checkout-review-order table tr td:last-child{
+    width: 540px !important;
+}
+
+/* скрываем чекбоксы и блоки с содержанием */
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label {
+    margin: 0;
+    padding: 0;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+
+.hide + label:before {
+    background-color: #1e90ff;
+    color: #fff;
+    content: "\002B";
+    font-size: 14px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0 7px;
+}
+.hide:checked + label:before {
+    content: "\2212";
+}
+
+.woocommerce-shipping-totals{
+    display: none;
+}
+
+.checkout tr.cart_item{
+    display: none;
+}
+
+.show-product-details {
+    margin-bottom: 10px;
+}
+.woocommerce-checkout-review-order-table #shipping_method li input, .woocommerce-checkout-review-order-table #shipping_method li input + label {
+    display: none;
+}
+.woocommerce-checkout-review-order-table #shipping_method li input:checked, .woocommerce-checkout-review-order-table #shipping_method li input:checked + label {
+    display: inline-block;
+}
+
+.cart_totals .woocommerce-shipping-totals #shipping_method li input, .cart_totals .woocommerce-shipping-totals #shipping_method li input + label {
+    display: none;
+}
+.cart_totals . woocommerce-shipping-totals#shipping_method li input:checked, .cart_totals .woocommerce-shipping-totals #shipping_method li input:checked + label {
+    display: inline-block;
+}
